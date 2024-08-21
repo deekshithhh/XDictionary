@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Dictionary() {
   const [text, setText] = useState("");
@@ -14,6 +14,10 @@ export default function Dictionary() {
 
     { word: "State", meaning: "An object that stores data for a component." },
   ];
+
+  useEffect(()=>{
+    
+  })
 
   const Searchdict = (SearchData) => {
     const response = DictData.find(
