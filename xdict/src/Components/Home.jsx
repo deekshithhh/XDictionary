@@ -52,16 +52,3 @@ export default function Dictionary() {
 
   );
 }
-
-{/* <div>
-    <h1>Dictionary App</h1>
-    <input
-      type="text"
-      placeholder="Search for a word..."
-      value={text}
-      onChange={(e) => setText(e.target.value)}
-    />
-    <button onClick={handlesubmit}>Search</button>
-    <h4>Definition:</h4>
-    <div>{reply}</div>
-    </div> */}
