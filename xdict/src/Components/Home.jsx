@@ -17,7 +17,7 @@ export default function Dictionary() {
 
   const Searchdict = (SearchData) => {
     const response = DictData.find(
-      (item) => SearchData.toLowerCase() == item.word.toLocaleLowerCase()
+      (item) => SearchData.toLowerCase() === item.word.toLocaleLowerCase()
     );
 
     if (response != undefined) {
