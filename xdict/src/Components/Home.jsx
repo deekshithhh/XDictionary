@@ -38,15 +38,28 @@ export default function Dictionary() {
   };
 
   return (
-    <div>
-      <h1>Dictionary App</h1>
-      <form onSubmit={handlesubmit}>
-        <input type="text" placeholder="Search for a word..." onChange={(e) => setText(e.target.value)} />
-        {/* <input type='text' onChange={(e) => setText(e.target.value)} /> */}
+    // <div>
+    //   <h1>Dictionary App</h1>
+    //   <form onSubmit={handlesubmit}>
+    //     <input type="text" placeholder="Search for a word..." onChange={(e) => setText(e.target.value)} />
+    //     {/* <input type='text' onChange={(e) => setText(e.target.value)} /> */}
 
-        <button type="submit">Search</button>
-      </form>
-      <>Definition:<p>{reply}</p></>
-    </div>
+    //     <button type="submit">Search</button>
+    //   </form>
+    //   <>Definition:<p>{reply}</p></>
+    // </div>
+
+<div>
+<h1>Dictionary App</h1>
+<input
+  type="text"
+  placeholder="Search for a word..."
+  value={text}
+  onChange={(e) => setText(e.target.value)}
+/>
+<button onClick={handlesubmit}>Search</button>
+<h4>Definition:</h4>
+<div>{reply}</div>
+</div>
   );
 }
