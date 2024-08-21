@@ -41,7 +41,7 @@ export default function Dictionary() {
     <div>
       <h1>Dictionary App</h1>
       <form onSubmit={handlesubmit}>
-        <input type="text" onChange={(e) => setText(e.target.value)} />
+        <input type="text" placeholder="Search for a word..." onChange={(e) => setText(e.target.value)} />
         {/* <input type='text' onChange={(e) => setText(e.target.value)} /> */}
 
         <button type="submit">Search</button>
