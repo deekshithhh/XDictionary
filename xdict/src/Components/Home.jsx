@@ -42,7 +42,7 @@ export default function Dictionary() {
 
         <button type="submit">Search</button>
       </form>
-      {reply && <div>Definition: {reply}</div>}
+      {reply && <div>Definition:<p>{reply}</p> </div>}
     </div>
   );
 }
